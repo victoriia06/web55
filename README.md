@@ -8,7 +8,7 @@
 
 ```sql
 CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT unsigned AUTO_INCREMENT PRIMARY KEY,
     application_id INT NOT NULL,
     login VARCHAR(50) NOT NULL UNIQUE,
     password_hash VARCHAR(255) NOT NULL,
