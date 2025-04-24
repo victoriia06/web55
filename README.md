@@ -51,9 +51,9 @@ $fieldErrors = $_SESSION['fieldErrors'] ?? [];
 // Если пользователь авторизован, загружаем его данные
 if (!empty($_SESSION['login'])) {
     try {
-        $user = 'u70422';
-        $pass = '4545635';
-        $dbname = 'u70422';
+        $user = 'uXXXXX';
+        $pass = 'YYYYYYY';
+        $dbname = 'uXXXXX';
         $db = new PDO("mysql:host=localhost;dbname=$dbname", $user, $pass);
         
         // Получаем данные пользователя
@@ -238,9 +238,9 @@ $pass = $_POST['pass'] ?? '';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     try {
-        $user = 'u70422';
-        $pass_db = '4545635';
-        $dbname = 'u70422';
+        $user = 'uXXXXX';
+        $pass_db = 'YYYYYYY';
+        $dbname = 'uXXXXX';
         $db = new PDO("mysql:host=localhost;dbname=$dbname", $user, $pass_db);
         
         // Ищем пользователя
