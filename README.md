@@ -401,20 +401,6 @@ if (!empty($_SESSION['login'])) {
 ?>
 ```
 
-## Шаг 6: Обновление базы данных
-
-Не забудьте выполнить SQL-запрос для создания таблицы users:
-
-```sql
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    application_id INT NOT NULL,
-    login VARCHAR(50) NOT NULL UNIQUE,
-    password_hash VARCHAR(255) NOT NULL,
-    FOREIGN KEY (application_id) REFERENCES applications(id)
-);
-```
-
 ## Как это работает:
 
 1. **Первичная отправка формы**:
